@@ -1,3 +1,4 @@
+
 const toggles = document.querySelectorAll('.faq-toggle')
 
 toggles.forEach(toggle => {
@@ -6,3 +7,4 @@ toggles.forEach(toggle => {
     ('active')
   })
 })
+
