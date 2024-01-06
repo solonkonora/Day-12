@@ -35,7 +35,7 @@ h1 {
   box-shadow: 0 3px 6px #001a, 0 6px 6px #001a;
 }
 
-.faq.active::before,
+.faq.active::before
 .faq.active::after {
   content: '\f075';
   font-family: 'font Awesome 5 Free';
@@ -84,4 +84,32 @@ h1 {
   right: 30px;
   height: 30px;
   width: 30px;
+  border-radius: 50%;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-toggle
+.fa-times {
+  display: none;
+}
+ 
+.faq.active
+.faq-toggle
+.fa-times {
+  color: #fff;
+  display: block;
+}
+
+ .faq.active
+ .faq-toggle
+ .fa-chevron-down {
+  display: none;
+}
+
+.faq.active
+.faq-toggle {
+  background-color: #9fa4a8;
 }
